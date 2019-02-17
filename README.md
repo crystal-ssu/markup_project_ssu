@@ -1,16 +1,8 @@
 # UI 가이드 만들기
-## FORM
-###  PC
-- 5가지 예제 추가
--
--
--
--
+## 1. FORM
 
-###  Mobile
-- 5가지 예제 추가
--
--
--
--
-
+### TEXT FIELD
+### CHECK BOX
+### RADIO BUTTON
+### SELECT BOX
+### file upload

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>UI 가이드</title>
+<link rel="stylesheet" type="text/css" href="common/css/common.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<script src="https://direct.samsungfire.com/resources/js/ui.global.min.js"></script>
+<script src="https://direct.samsungfire.com/resources/js/ui.plugins.min.js"></script>
+</head>
+<body>
+<div class="test_wrap">
+	<div class="header">
+		<div class="content">
+			<h1>UI 가이드</h1>
+			<ul class="info_lst">
+				<li>지원 브라우저 범위 : IE9</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="cm_tit">
+				<h3>TEXT FIELD</h3>
+			</div>
+			<div class="cm_cont">
+				<p>입력 중일 때 이메일 텍스트와 입력된 텍스트가 겹침(오류 미완료)</p>
+				<form class="account">
+					<div class="login__item">
+						<input id="log-nav-before-email" class="login__input" type="email" name="username" maxlength="255" required aria-errormessage="log-nav-before-email-msg">
+						<label for="log-nav-before-email" class="login__label">이메일</label>
+						<p id="log-nav-before-email-msg--on" class="login__msg" hidden data-for="username" role="tooltip" aria-live="assertive">로그인에 사용하실 이메일을 입력해주세요.</p>
+					</div>
+				</form>
+			</div>
+			<div class="cm_tit">
+				<h3>CHECK BOX</h3>
+			</div>
+			<div class="cm_cont">
+				<p>출처 : 레진코믹스</p>
+				<ul class="marB20">
+					<li>- IE9까지 호환가능(에뮬레이션으로 확인 -> real 9에서 확인필요)</li>
+					<li>- 입력 서식 on/off 이미지 없이 해결</li>
+				</ul>
+				<div id="signup-agree" class="signupAgree">
+					<label class="lzCheck">
+						<input class="agree-all" type="checkbox" name="chk-all">
+						<i class="strong">전체동의</i>
+					</label><hr>
+					<fieldset class="signupAgree__check">
+						<label class="lzCheck">
+							<input type="checkbox" name="agree-tos">
+							<i>레진코믹스 이용약관<b>(필수)</b></i>
+						</label>
+					</fieldset>
+					<fieldset class="signupAgree__check">
+						<label class="lzCheck"><input type="checkbox" name="agree-pp">
+							<i>개인정보 수집 및 이용에 대한 안내<b>(필수)</b></i>
+						</label>
+					</fieldset>
+					<label class="lzCheck"><input type="checkbox" name="agree_market_email">
+						<i>이벤트 등 혜택정보 알림(이메일/SMS)(선택)</i>
+					</label><hr>
+					<label class="lzCheck">
+						<input type="checkbox" name="adult">
+						<i class="strong">만 14세 이상입니다.<b>(필수)</b></i>
+					</label>
+				</div>
+
+				<fieldset class="filter__field">
+					<legend class="filter__legend">장르 선택</legend>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="all">
+						<i class="genre__text">모든장르</i>
+					</label>
+					<label class="genre__label"><input class="genre__input" type="checkbox" value="romance">
+						<i class="genre__text">로맨스</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="bl">
+						<i class="genre__text">BL</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="drama">
+						<i class="genre__text">드라마</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="fantasy">
+						<i class="genre__text">판타지</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="gag">
+						<i class="genre__text">개그</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="action">
+						<i class="genre__text">액션</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="horror">
+						<i class="genre__text">호러</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="historical">
+						<i class="genre__text">시대극</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="sports">
+						<i class="genre__text">스포츠</i>
+					</label>
+					<label class="genre__label">
+						<input class="genre__input" type="checkbox" value="gore">
+						<i class="genre__text">스릴러</i>
+					</label>
+				</fieldset>
+			</div>
+			<!-- <div class="cm_tit">
+				<h3>SWITCH BUTTON</h3>
+			</div>
+			<div class="cm_cont">
+				<div class="slide_on_off">
+					<input type="checkbox" id="test_uio07" name="test_check3"><label for="test_uio07"><span class="blind on">ON</span><span class="blind off">OFF</span></label>
+				</div>
+			</div> -->
+			<div class="cm_tit" id="radio_test">
+				<h3>RADIO BUTTON</h3>
+			</div>
+			<div class="cm_cont">
+				<p>출처 : 레진코믹스 <a href="https://www.lezhin.com/ko/super-challenge">https://www.lezhin.com/ko/super-challenge</a></p>
+				<ul class="marB20">
+					<li>- IE9까지 호환가능(에뮬레이션으로 확인 -> real 9에서 확인필요)</li>
+					<li>- 입력 서식 on/off 이미지 없이 해결</li>
+				</ul>
+				<fieldset class="filter__field">
+					<legend class="filter__legend">정렬 기준</legend>
+					<label class="lzRadio">
+						<input name="filter-sort" type="radio" value="update">
+						<i>업데이트 순</i>
+					</label>
+					<label class="lzRadio"><input name="filter-sort" type="radio" value="view">
+						<i>조회 순</i></label>
+					<label class="lzRadio"><input name="filter-sort" type="radio" value="score"><i>별점 순</i></label>
+				</fieldset>
+
+				<fieldset class="view__rating"><legend class="view__ratingLegend">이번 에피소드, 제 점수는요?</legend><div class="view__ratingGroup"><input id="view-rating-point-1" class="view__ratingInput" name="view-rating-point" type="radio" title="1점" value="1"><label for="view-rating-point-1" class="view__ratingLabel">최악이에요! 1점!</label><i class="view__ratingStar"></i><input id="view-rating-point-2" class="view__ratingInput" name="view-rating-point" type="radio" title="2점" value="2"><label for="view-rating-point-2" class="view__ratingLabel">실망이에요! 2점!</label><i class="view__ratingStar"></i><input id="view-rating-point-3" class="view__ratingInput" name="view-rating-point" type="radio" title="3점" value="3"><label for="view-rating-point-3" class="view__ratingLabel">노잼이에요! 3점!</label><i class="view__ratingStar"></i><input id="view-rating-point-4" class="view__ratingInput" name="view-rating-point" type="radio" title="4점" value="4"><label for="view-rating-point-4" class="view__ratingLabel">별로예요! 4점!</label><i class="view__ratingStar"></i><input id="view-rating-point-5" class="view__ratingInput" name="view-rating-point" type="radio" title="5점" value="5"><label for="view-rating-point-5" class="view__ratingLabel">보통이에요! 5점!</label><i class="view__ratingStar"></i><input id="view-rating-point-6" class="view__ratingInput" name="view-rating-point" type="radio" title="6점" value="6"><label for="view-rating-point-6" class="view__ratingLabel">괜찮아요! 6점!</label><i class="view__ratingStar"></i><input id="view-rating-point-7" class="view__ratingInput" name="view-rating-point" type="radio" title="7점" value="7"><label for="view-rating-point-7" class="view__ratingLabel">볼만해요! 7점!</label><i class="view__ratingStar"></i><input id="view-rating-point-8" class="view__ratingInput" name="view-rating-point" type="radio" title="8점" value="8"><label for="view-rating-point-8" class="view__ratingLabel">재미있어요! 8점!</label><i class="view__ratingStar"></i><input id="view-rating-point-9" class="view__ratingInput" name="view-rating-point" type="radio" title="9점" value="9"><label for="view-rating-point-9" class="view__ratingLabel">꿀잼이에요! 9점!</label><i class="view__ratingStar"></i><input id="view-rating-point-10" class="view__ratingInput" name="view-rating-point" type="radio" title="10점" value="10"><label for="view-rating-point-10" class="view__ratingLabel">최고예요! 10점</label><i class="view__ratingStar"></i></div>
+					<p class="view__ahead" hidden="">스크롤해서 계속 감상하세요!</p>
+				</fieldset>
+			</div>
+			<div class="cm_tit">
+				<h3>SELECT BOX</h3>
+			</div>
+			<div class="cm_cont">
+				<fieldset id="signup-birthday">
+					<lagend class="signUp__label">생년월일</lagend>
+					<div class="signUp__birth">
+						<select name="birthYear" aria-errormessage="login-birthday-msg">
+							<option value="0">년</option>
+							<option value="2005">2005</option>
+						</select>
+						<select name="birthMonth" aria-errormessage="login-birthday-msg">
+							<option value="0">월</option>
+							<option value="01">1</option>
+						</select>
+						<select name="birthDay" aria-errormessage="login-birthday-msg">
+							<option value="0">일</option>
+							<option value="01">1</option>
+						</select>
+					</div>
+					<input id="login-birthdate" name="birth_date" type="hidden" value="">
+					<p id="login-birthday-msg" class="login__msg" hidden data-for="birth_date" role="tooltip" aria-live="assertive"></p>
+				</fieldset>
+			</div>
+			<div class="cm_tit">
+				<h3>file upload</h3>
+			</div>
+			<div class="cm_cont">
+				<p>출처 : 삼성화재 <a href="https://direct.samsungfire.com/guide/form.html">https://direct.samsungfire.com/guide/form.html</a></p>
+				
+				<div class="ui-file" id="addfile1">
+					<button type="button" class="btn-base ui-file-btn"><span>단일 첨부파일</span></button>
+				</div>
+
+				<div class="ui-file" id="addfile2">
+					<button type="button" class="btn-base ui-file-btn"><span>멀티 첨부파일</span></button>
+				</div>
+
+				<div id="tst-file">
+
+				</div>
+
+				<div class="ui-file" id="addfile3">
+					<button type="button" class="btn-base ui-file-btn"><span>멀티 첨부파일2</span></button>
+				</div>
+
+				<div id="tst-file">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+(function($, win, doc, undefined) {
+
+	/* 파일 업로드 */
+	$plugins.uiFileUpload({ id:'addfile1', accept: 'image/*' }); 
+	$plugins.uiFileUpload({ id:'addfile2', multi: true, place:'tst-file' }); 
+	$plugins.uiFileUpload({ id:'addfile3', multi: true, place:'tst-file', callback:cbFileup });
+
+})(jQuery, window, document);
+</script>
+</body>
+</html>
